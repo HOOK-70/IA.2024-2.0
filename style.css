@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --cor-fundo: #7ebcf1;
-    --cor-principal: #03090c;
-    --cor-secundaria: #212333;
-    --cor-destaque: #071416;
-    --cor-texto: #D7F9FF;
+    --cor-fundo: #195db0;
+    --cor-principal: #023b56;
+    --cor-secundaria: #3c458c;
+    --cor-destaque: #5396d9;
+    --cor-texto: #e3f9fd;
 }
   
 body {
-    background-color: var(--cor-fundo);
+    background: linear-gradient(#051532, #095375);
     color: var(--cor-texto);
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -19,13 +19,16 @@ body {
 }
 
 .caixa-principal {
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: var(--cor-principal);
-    width: 90%;
+    width: 400px;
     max-width: 600px;
     text-align: center;
     padding: 20px;
     border-radius: 15px;
-    border: 3px solid greenyellow;
+    border: solid 5px #44b6eb;
 }
 
 h1, .caixa-perguntas, .caixa-resultado {
@@ -224,13 +227,17 @@ footer .menu__item:nth-child(6) a {
 }
 
 h2{
-  color: #846ecd;
+  color: #34b2ec;
 }
 h1{
   text-align: center;
 }
 
 h2:hover {
-  color: rgb(96, 102, 127); 
+  text-shadow: 0 0 55px #1e92b5,
+  0 0 10px #2e6e99, 0 0 15px #1c3895,
+  0 0 20px #314daa, 0 0 25px #3a70ce,
+  0 0 30px #3aa2cb
+  ;
   font-weight: bold;
 }
